@@ -1,0 +1,22 @@
+body{
+    background-image: url(../img/bg1.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* .mybtn{
+    background-color: 
+} */
+
+a:hover{
+    background-color: #d1ade0;
+
+}
+
+a:hover p{
+    color:black;
+}
+

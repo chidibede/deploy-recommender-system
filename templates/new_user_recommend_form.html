@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Recommend Users</title>
+{% endblock %}
+
+{% block body %} 
+
+<h1 class='text-center text-light mt-4'>Recommend Popular Users</h1>
+    <div class="row">
+        <div class='col-sm-12 col-xs-12 col-md-6, col-lg-6 mx-auto mt-5'>
+            <div class='bg-light mx-auto p-4 mt-2'>
+                <form action="{{ url_for('new_user_recommender')}}" method="POST">
+                    <div class="form-group">
+                        <input type="text" name='enter_name' placeholder="Enter Name of the User" required='required' class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                            <input type="submit" id="submit" class=" btn btn-lg form-control btn-dark" value="Recommend">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+
+{% endblock %}

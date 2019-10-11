@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Recommendations</title>
+{% endblock %}
+
+
+{% block body %}
+
+<div class="row">
+        <div class='col-sm-12 col-xs-12 col-md-6, col-lg-6 mx-auto mt-5'>
+            <div class='bg-light mx-auto p-4 mt-2'>
+                <h4>Recommended Articles</h4>
+                <p class="text-dark">
+                    <ul>
+                        {% for text in prediction_text %}
+                        <li class="list-unstyled">{{text}}</li>
+                        <br>
+                        {% endfor %}
+                    </ul>
+                            
+                </p>
+            </div>
+        </div>
+       
+        
+    </div>
+
+{% endblock %}
